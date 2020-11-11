@@ -17,7 +17,14 @@
  */
 package org.ethereum.listener;
 
+
+
+
+
 /**
+ *
+ *
+ * 交易状态
  * Created by Anton Nashatyrev on 15.07.2016.
  */
 public class TxStatus {

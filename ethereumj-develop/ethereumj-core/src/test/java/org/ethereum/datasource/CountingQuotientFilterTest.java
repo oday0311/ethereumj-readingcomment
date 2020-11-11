@@ -1,6 +1,6 @@
 package org.ethereum.datasource;
 
-import org.ethereum.datasource.CountingQuotientFilter;
+import org.ethereum.datasource.filter.CountingQuotientFilter;
 import org.junit.Ignore;
 import org.junit.Test;
 

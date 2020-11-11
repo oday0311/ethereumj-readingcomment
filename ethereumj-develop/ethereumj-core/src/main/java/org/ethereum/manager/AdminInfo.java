@@ -15,6 +15,9 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with the ethereumJ library. If not, see <http://www.gnu.org/licenses/>.
  */
+
+
+//计算最近的10000个块的执行时间。
 package org.ethereum.manager;
 
 import org.springframework.stereotype.Component;

@@ -29,6 +29,9 @@ import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 /**
+ *
+ *
+ * 带读写锁的一个db
  * Created by Anton Nashatyrev on 12.10.2016.
  */
 public class HashMapDB<V> implements DbSource<V> {

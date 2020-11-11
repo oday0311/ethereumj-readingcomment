@@ -17,7 +17,7 @@
  */
 package org.ethereum.db;
 
-import org.ethereum.datasource.QuotientFilter;
+import org.ethereum.datasource.filter.QuotientFilter;
 import org.junit.Assert;
 import org.junit.Ignore;
 import org.junit.Test;

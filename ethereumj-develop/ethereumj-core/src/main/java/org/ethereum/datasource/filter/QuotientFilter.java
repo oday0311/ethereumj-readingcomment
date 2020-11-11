@@ -58,19 +58,17 @@
         FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
         DEALINGS IN THE SOFTWARE.
 */
-package org.ethereum.datasource;
+package org.ethereum.datasource.filter;
 
 import com.google.common.base.Preconditions;
 import com.google.common.math.LongMath;
 import com.google.common.primitives.Ints;
-import org.ethereum.util.ByteUtil;
 
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 import static java.lang.System.arraycopy;
-import static java.lang.System.in;
 import static java.util.Arrays.copyOfRange;
 import static org.ethereum.util.ByteUtil.byteArrayToLong;
 import static org.ethereum.util.ByteUtil.longToBytes;

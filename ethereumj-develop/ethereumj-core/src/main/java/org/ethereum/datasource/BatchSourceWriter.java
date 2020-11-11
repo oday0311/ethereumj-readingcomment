@@ -22,6 +22,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
+ * 写
  * Clue class between Source and BatchSource
  *
  * Created by Anton Nashatyrev on 29.11.2016.

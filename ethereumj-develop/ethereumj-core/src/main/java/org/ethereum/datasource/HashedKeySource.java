@@ -18,6 +18,7 @@
 package org.ethereum.datasource;
 
 /**
+ * 空的
  * Indicator interface which narrows the Source contract:
  * the same Key always maps to the same Value,
  * there could be no put() with the same Key and different Value

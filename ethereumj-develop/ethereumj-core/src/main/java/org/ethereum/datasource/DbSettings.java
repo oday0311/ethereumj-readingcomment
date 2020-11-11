@@ -18,6 +18,10 @@
 package org.ethereum.datasource;
 
 /**
+ *
+ *
+ *
+ * 数据库设置
  * Defines configurable database settings
  *
  * @author Mikhail Kalinin

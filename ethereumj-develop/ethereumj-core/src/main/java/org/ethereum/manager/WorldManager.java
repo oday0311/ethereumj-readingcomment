@@ -51,6 +51,7 @@ import static org.ethereum.util.ByteUtil.toHexString;
 
 /**
  * WorldManager is a singleton containing references to different parts of the system.
+ * 单例， 包含系统里的其他对象
  *
  * @author Roman Mandeleil
  * @since 01.06.2014
@@ -60,9 +61,11 @@ public class WorldManager {
 
     private static final Logger logger = LoggerFactory.getLogger("general");
 
+    //当前活跃节点
     @Autowired
     private PeerClient activePeer;
 
+    //
     @Autowired
     private ChannelManager channelManager;
 
@@ -177,8 +180,6 @@ public class WorldManager {
 
             Genesis genesis = Genesis.getInstance(config);
             Genesis.populateRepository(repository, genesis);
-
-//            repository.commitBlock(genesis.getHeader());
             repository.commit();
 
             blockStore.saveBlock(Genesis.getInstance(config), Genesis.getInstance(config).getDifficultyBI(), true);
@@ -187,7 +188,6 @@ public class WorldManager {
             blockchain.setTotalDifficulty(Genesis.getInstance(config).getDifficultyBI());
 
             listener.onBlock(new BlockSummary(Genesis.getInstance(config), new HashMap<byte[], BigInteger>(), new ArrayList<TransactionReceipt>(), new ArrayList<TransactionExecutionSummary>()), true);
-//            repository.dumpState(Genesis.getInstance(config), 0, 0, null);
 
             logger.info("Genesis block loaded");
         } else {

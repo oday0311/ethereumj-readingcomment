@@ -15,9 +15,11 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with the ethereumJ library. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.ethereum.datasource;
+package org.ethereum.datasource.filter;
 
 import org.ethereum.crypto.HashUtil;
+import org.ethereum.datasource.AbstractChainedSource;
+import org.ethereum.datasource.Source;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

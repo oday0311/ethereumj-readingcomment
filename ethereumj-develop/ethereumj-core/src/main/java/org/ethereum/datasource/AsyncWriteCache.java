@@ -29,6 +29,8 @@ import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 /**
+ *
+ * 异步多线程 内存读
  * Created by Anton Nashatyrev on 18.01.2017.
  */
 public abstract class AsyncWriteCache<Key, Value> extends AbstractCachedSource<Key, Value> implements AsyncFlushable {

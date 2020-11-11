@@ -18,6 +18,9 @@
 package org.ethereum.datasource;
 
 /**
+ *
+ * chained source， 名字好困惑， chain上的数据么，
+ *
  * Abstract Source implementation with underlying backing Source
  * The class has control whether the backing Source should be flushed
  * in 'cascade' manner

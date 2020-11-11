@@ -1,5 +1,6 @@
 package org.ethereum.datasource;
 
+import org.ethereum.datasource.filter.BloomFilter;
 import org.junit.Test;
 
 import java.io.UnsupportedEncodingException;

@@ -17,6 +17,7 @@
  */
 package org.ethereum.datasource;
 
+import org.ethereum.datasource.filter.CountingBytesSource;
 import org.ethereum.datasource.inmem.HashMapDB;
 import org.ethereum.vm.DataWord;
 import org.junit.Before;

@@ -1,9 +1,9 @@
 package org.ethereum.db.prune;
 
 import org.ethereum.crypto.HashUtil;
-import org.ethereum.datasource.CountingQuotientFilter;
+import org.ethereum.datasource.filter.CountingQuotientFilter;
 import org.ethereum.datasource.JournalSource;
-import org.ethereum.datasource.QuotientFilter;
+import org.ethereum.datasource.filter.QuotientFilter;
 import org.ethereum.datasource.Source;
 import org.ethereum.util.ByteArraySet;
 import org.slf4j.Logger;

@@ -18,6 +18,8 @@
 package org.ethereum.datasource;
 
 /**
+ *
+ * 内存缓存数据源，
  * Abstract cache implementation which tracks the cache size with
  * supplied key and value MemSizeEstimator's
  *

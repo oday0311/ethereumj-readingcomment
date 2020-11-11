@@ -31,6 +31,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
+ * 启动参数处理, 读取
  * @author Roman Mandeleil
  * @since 13.11.2014
  */

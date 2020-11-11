@@ -20,6 +20,7 @@ package org.ethereum.datasource;
 import java.util.Map;
 
 /**
+ * 批量更新数据
  * The Source which is capable of batch updates.
  * The semantics of a batch update is up to implementation:
  * it can be just performance optimization or batch update

@@ -1,4 +1,4 @@
-package org.ethereum.datasource;
+package org.ethereum.datasource.filter;
 
 import java.util.HashMap;
 import java.util.Map;

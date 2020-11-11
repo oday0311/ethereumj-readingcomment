@@ -20,6 +20,7 @@ package org.ethereum.datasource;
 import java.util.Set;
 
 /**
+ * 接口类
  * Interface represents DB source which is normally the final Source in the chain
  */
 public interface DbSource<V> extends BatchSource<byte[], V> {

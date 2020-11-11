@@ -1,3 +1,18 @@
+
+//////////////////////// ##
+find ./ -name "*.java" |xargs cat|grep -v ^$|wc -l
+
+
+10w lines
+
+
+////////////////////////
+
+
+
+
+
+
 # Welcome to ethereumj
 
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/ethereum/ethereumj?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)

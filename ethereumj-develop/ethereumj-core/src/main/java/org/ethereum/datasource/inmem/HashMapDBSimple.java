@@ -26,6 +26,8 @@ import java.util.Map;
 import java.util.Set;
 
 /**
+ *
+ * 不带读写锁的内存存储
  * Created by Anton Nashatyrev on 12.10.2016.
  */
 public class HashMapDBSimple<V> implements DbSource<V> {
