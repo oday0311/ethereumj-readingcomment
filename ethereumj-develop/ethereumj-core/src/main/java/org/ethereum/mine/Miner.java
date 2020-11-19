@@ -120,7 +120,6 @@ public class Miner {
 
     private void sleep() {
         try {
-//            Thread.sleep(1);
             Thread.sleep(10);
         } catch (InterruptedException e) {
             e.printStackTrace();

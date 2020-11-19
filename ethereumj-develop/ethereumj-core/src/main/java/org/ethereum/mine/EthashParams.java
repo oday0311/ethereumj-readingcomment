@@ -18,6 +18,8 @@
 package org.ethereum.mine;
 
 /**
+ *
+ * 挖矿常见参数
  * Created by Anton Nashatyrev on 27.11.2015.
  */
 public class EthashParams {

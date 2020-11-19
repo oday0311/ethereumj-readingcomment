@@ -61,7 +61,9 @@ public class EthashAlgoSlow {
     }
     static void setWord(byte[] arr, int wordOff, long val) {
         ByteBuffer bb = ByteBuffer.allocate(4).order(ByteOrder.LITTLE_ENDIAN).putInt((int) val);
+        //把position设为0，mark设为-1，不改变limit的值
         bb.rewind();
+        //这个get函数真诡异， 应该改成set合适一点把
         bb.get(arr, wordOff * 4, 4);
     }
 

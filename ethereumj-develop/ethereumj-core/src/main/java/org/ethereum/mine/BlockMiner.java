@@ -65,6 +65,10 @@ public class BlockMiner {
 
     private SystemProperties config;
 
+
+    //在很多应用场景中，读操作可能会远远大于写操作。
+    // 由于读操作根本不会修改原有的数据，因此如果每次读取都进行加锁操作，其实是一种资源浪费。
+    // 我们应该允许多个线程同时访问 List 的内部数据，毕竟读操作是线程安全的。
     private List<MinerListener> listeners = new CopyOnWriteArrayList<>();
 
     private BigInteger minGasPrice;

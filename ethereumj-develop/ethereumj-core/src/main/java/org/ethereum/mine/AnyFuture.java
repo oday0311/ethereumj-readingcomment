@@ -33,6 +33,12 @@ public class AnyFuture<V> extends AbstractFuture<V> {
 
     /**
      * Add a Future delegate
+     * 主要原因有：
+     * 1.存在共享数据
+     * 2.多线程共同操作共享数据。
+     * 关键字synchronized可以保证在同一时刻，
+     * 只有一个线程可以执行某个方法或某个代码块，
+     * 同时synchronized可以保证一个线程的变化可见（可见性），即可以代替volatile。
      */
     public synchronized void add(final ListenableFuture<V> f) {
         if (isCancelled() || isDone()) return;

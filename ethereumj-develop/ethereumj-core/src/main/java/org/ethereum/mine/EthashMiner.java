@@ -36,6 +36,9 @@ public class EthashMiner implements MinerIfc {
     SystemProperties config;
 
     private int cpuThreads;
+
+     //# 挖矿模式，full模式：需要更多的内存，但后续挖矿块；light:需要少内存但是挖矿慢
+    //
     private boolean fullMining = true;
     private Set<EthashListener> listeners = new CopyOnWriteArraySet<>();
 
