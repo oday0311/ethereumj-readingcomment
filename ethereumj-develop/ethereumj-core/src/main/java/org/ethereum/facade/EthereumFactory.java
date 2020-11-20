@@ -61,6 +61,8 @@ public class EthereumFactory {
 
     public static Ethereum createEthereum(Class ... springConfigs) {
         logger.info("Starting EthereumJ...");
+        //使用AnnotationConfigApplicationContext可以实现基于Java的配置类加载Spring的应用上下文。
+        // 避免使用application.xml进行配置。相比XML配置，更加便捷。
         AbstractApplicationContext context = new AnnotationConfigApplicationContext(springConfigs);
         context.registerShutdownHook();
         return context.getBean(Ethereum.class);

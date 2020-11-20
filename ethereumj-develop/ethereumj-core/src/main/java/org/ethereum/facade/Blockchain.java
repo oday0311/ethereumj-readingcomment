@@ -50,6 +50,7 @@ public interface Blockchain {
     BigInteger getTotalDifficulty();
 
     /**
+     * store是存储对象
      * Get the underlying BlockStore
      * @return Blockstore
      */

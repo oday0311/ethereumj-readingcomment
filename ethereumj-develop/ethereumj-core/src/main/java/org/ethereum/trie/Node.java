@@ -95,3 +95,18 @@ public class Node {
         return "[" + dirty + ", " + value + "]";
     }
 }
+
+
+/*
+
+https://image-static.segmentfault.com/309/469/3094698205-5c009d8768f3b_articlex
+
+
+MTP树种的节点包含空节点、叶子节点、扩展节点和分支节点。
+
+        Nibble：它是key的基本单元，是一个四元组（四个bit位的组合例如二进制表达的0010就是一个四元组）
+        空节点**：简单的表示空，在代码中是一个空串。
+        叶子节点（leaf）：只有两个元素，分别为key和value，表示为[key,value]的一个键值对，其中key是key的一种特殊十六进制编码，value是value的RLP编码。
+        扩展节点（extension）：也是[key，value]的一个键值对，但是这里的value是其他节点的hash值，这个hash可以被用来查询数据库中的节点。也就是说通过hash链接到其他节点。
+        分支节点（branch）：分支节点有17个元素，回到Nibble，四元组是key的基本单元，四元组最多有16个值。所以前16个必将落入到在其遍历中的键的十六个可能的半字节值中的每一个。第17个是存储那些在当前结点结束了的节点(例如， 有三个key,分别是 (abc ,abd, ab) 第17个字段储存了ab节点的值)
+*/

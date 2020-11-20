@@ -96,14 +96,19 @@ public class WorldManager {
     @Autowired
     private ApplicationContext ctx;
 
+    //配置信息
     private SystemProperties config;
 
+    //eth事件回调
     private EthereumListener listener;
 
+    //链对象
     private Blockchain blockchain;
 
+    //仓库？
     private Repository repository;
 
+    //存储
     private BlockStore blockStore;
 
     @Autowired

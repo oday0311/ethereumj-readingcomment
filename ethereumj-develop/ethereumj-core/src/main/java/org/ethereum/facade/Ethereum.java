@@ -36,6 +36,8 @@ import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.Future;
 
 /**
+ *
+ * eth 对象接口
  * @author Roman Mandeleil
  * @since 27.07.2014
  */

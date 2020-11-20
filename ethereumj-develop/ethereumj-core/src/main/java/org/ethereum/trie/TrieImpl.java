@@ -61,6 +61,11 @@ public class TrieImpl implements Trie<byte[]> {
         return executor;
     }
 
+
+    /*
+    没有 extension node的概念？
+    kvnode value 就是extension node。
+     */
     public enum NodeType {
         BranchNode,
         KVNodeValue,

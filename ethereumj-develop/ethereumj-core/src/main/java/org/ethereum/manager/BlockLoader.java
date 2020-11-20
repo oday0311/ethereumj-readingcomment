@@ -44,6 +44,8 @@ import java.util.Scanner;
 import java.util.concurrent.atomic.AtomicLong;
 import java.util.function.Function;
 
+
+//块加载器， 从dump文件中加载
 @Component
 public class BlockLoader {
 
