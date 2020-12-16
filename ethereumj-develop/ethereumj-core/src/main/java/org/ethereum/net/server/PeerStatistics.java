@@ -27,6 +27,7 @@ public class PeerStatistics {
     private long pingCount = 0;
 
     public void pong(long pingStamp) {
+        //计算累计 ping 延迟
         long latency = System.currentTimeMillis() - pingStamp;
         avgLatency = ((avgLatency * pingCount) + latency) / ++pingCount;
     }

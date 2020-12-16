@@ -61,6 +61,8 @@ public class MessageQueue {
     private static final Logger logger = LoggerFactory.getLogger("net");
 
     private static final ScheduledExecutorService timer = Executors.newScheduledThreadPool(4, new ThreadFactory() {
+
+        //AtomicInteger 性能高于 sychronize
         private AtomicInteger cnt = new AtomicInteger(0);
 
         public Thread newThread(Runnable r) {

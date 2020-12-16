@@ -23,6 +23,14 @@ import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.math.RoundingMode;
 
+
+/*
+
+
+BigInteger util 工具
+
+
+ */
 public class BIUtil {
 
 

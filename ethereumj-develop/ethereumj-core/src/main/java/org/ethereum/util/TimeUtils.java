@@ -18,6 +18,7 @@
 package org.ethereum.util;
 
 /**
+ * 时间工具
  * @author Mikhail Kalinin
  * @since 10.08.2015
  */

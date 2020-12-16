@@ -82,7 +82,6 @@ public class JSONHelper {
                     BigInteger.ZERO);
 
         account.put("balance", state.getBalance() == null ? "0" : state.getBalance().toString());
-//        account.put("codeHash", details.getCodeHash() == null ? "0x" : "0x" + Hex.toHexString(details.getCodeHash()));
         account.put("code", details.getCode() == null ? "0x" : "0x" + Hex.toHexString(details.getCode()));
         account.put("nonce", state.getNonce() == null ? "0" : state.getNonce().toString());
         account.set("storage", storage);
@@ -121,8 +120,6 @@ public class JSONHelper {
         blockNode.put("tx_list_root", ByteUtil.toHexString(block.getTxTrieRoot()));
         blockNode.put("uncles_hash", "0x" + Hex.toHexString(block.getUnclesHash()));
 
-//      JSONHelper.dumpTransactions(blockNode,
-//              stateRoot, codeHash, code, storage);
     }
 
 }

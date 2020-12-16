@@ -41,6 +41,8 @@ import java.util.Map;
  * - SHA3 RLP () value refers to the hash of the uncle lists in RLP, both empty lists.
  * <p>
  * See Yellow Paper: http://www.gavwood.com/Paper.pdf (Appendix I. Genesis Block)
+ *
+ * 传世块
  */
 public class Genesis extends Block {
 

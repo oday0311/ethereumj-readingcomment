@@ -19,6 +19,9 @@ package org.ethereum.core;
 
 import java.math.BigInteger;
 
+/*
+eth常用计量单位换算
+ */
 public enum Denomination {
 
     WEI(newBigInt(0)),

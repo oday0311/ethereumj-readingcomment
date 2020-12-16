@@ -24,6 +24,13 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
+
+/*
+
+
+编译信息
+
+ */
 public class BuildInfo {
 
     private static final Logger logger = LoggerFactory.getLogger("general");

@@ -26,6 +26,8 @@ import org.slf4j.LoggerFactory;
 import java.net.URL;
 
 /**
+ *
+ * 调试用的， 在某个配置高度才打开追踪。
  * @author Roman Mandeleil
  * @since 25.07.2014
  */

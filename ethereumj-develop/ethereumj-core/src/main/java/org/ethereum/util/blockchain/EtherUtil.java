@@ -20,6 +20,7 @@ package org.ethereum.util.blockchain;
 import java.math.BigInteger;
 
 /**
+ * eth的计量单位， 主要记住Gwei 9， eth 18。
  * Created by Anton Nashatyrev on 22.06.2016.
  */
 public class EtherUtil {
